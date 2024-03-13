@@ -1,7 +1,13 @@
+import "./App.css";
+import { Routes } from "react-router-dom";
+import route from "./Router/router";
+import Navbar from "./Components/Navbar";
+
 function App() {
   return (
-    <div className="">
-      <p className="text-3xl font-bold">hello world</p>
+    <div className="App">
+      <Navbar />
+      <Routes>{route.map((value) => value)}</Routes>
     </div>
   );
 }
